@@ -14,11 +14,11 @@ public class LoginController {
                             Model model) {
 
         if(error != null) {
-            model.addAttribute("errorMsg","Invalid username or password");
+            model.addAttribute("errorMsg","회원 정보가 유효하지 않습니다.");
         }
 
         if(logout != null) {
-            model.addAttribute("logoutMsg", "You have been logged out successfully ");
+            model.addAttribute("logoutMsg", "로그아웃 성공.");
         }
 
         return "login";
